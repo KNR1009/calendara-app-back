@@ -4,7 +4,7 @@ class CreateEvents < ActiveRecord::Migration[6.1]
       t.string :name, limit: 100, null: false 
       t.datetime :start, null: false
       t.datetime :end, null: false
-      t.boolean :timed, null: false
+      t.boolean :timed
       t.text :description
       t.string :color
 
