@@ -10,7 +10,7 @@ module Api
         if event.save
           render json: event
         else
-          render json: {message: "登録に失敗しました"}
+          render json: {message: event.errors.messages}
         end
       
       end
